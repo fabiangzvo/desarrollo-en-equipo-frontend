@@ -4,9 +4,13 @@ import sizes from '@utils/sizes';
 
 export const StyledInput = styled(Input)`
   background: ${({ theme }) => theme.background};
-  border: 1px solid ${({ theme }) => theme.primary};
+  border:none;
   box-sizing: border-box;
   border-radius: 5px;
+  
+  & .ant-input {
+    border:none;
+  }
 
   &:focus,
   &:active {
@@ -16,6 +20,5 @@ export const StyledInput = styled(Input)`
   @media screen and (max-width: ${sizes.sm}px) {
     font-size: 12px;
     font-weight: 400;
-    font-family: Manrope;
   }
 `;

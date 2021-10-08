@@ -13,4 +13,6 @@ export const StyledButton = styled(Button)`
   text-align: center;
   margin-top: 10px;
   color:${({ theme }) => theme.background};
+  border:none;
+  cursor: pointer;
 `;

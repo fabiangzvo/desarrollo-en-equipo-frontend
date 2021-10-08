@@ -9,7 +9,7 @@ function Router() {
 
   return (
     <Switch>
-      <Route exact path={`/${module}/login`} component={SignIn} />
+      <Route exact path={`/${module}/sign-in`} component={SignIn} />
       <Route exact path={`/${module}/remember-password`} component={RememberPassword} />
     </Switch>
   )

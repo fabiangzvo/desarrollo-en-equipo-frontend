@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useHistory } from "react-router-dom";
 
 import Form from '@components/Form/Form';
 import Layout from '@components/layout/Layout.component';
+import userApi from "@/api/user";
 
 import * as constants from './constants/SignIn';
-import { Wrapper, StyledLink, StyledText, ErrorBox } from './SignIn.style';
+import { Wrapper, StyledLink, StyledText, ErrorBox, StyledH1, StyledH2 } from './SignIn.style';
 
 const checkMessage = status => {
   switch (status) {
@@ -26,11 +28,20 @@ const checkMessage = status => {
 };
 
 function SignIn() {
-  const [status, setStatus] = useState(401);
+  const [status, setStatus] = useState(0);
+
+  const history = useHistory()
 
   const handleSubmit = async credentials => {
-    console.log({ credentials })
-    setStatus(500)
+    const { email, password } = credentials
+
+    const response = await userApi(email, password)
+
+    const { status } = response
+
+    if (status !== 200) return setStatus(status)
+
+    return history.push("/home")
   };
 
   return (
@@ -38,8 +49,8 @@ function SignIn() {
       <Wrapper>
         <div>
           {checkMessage(status)}
-          <h1>{constants.GREETING}</h1>
-          <h3>{constants.LOGIN_LABEL}</h3>
+          <StyledH1>{constants.GREETING}</StyledH1>
+          <StyledH2>{constants.LOGIN_LABEL}</StyledH2>
           <Form
             onFinish={handleSubmit}
             formItems={constants.FORM_ITEMS}

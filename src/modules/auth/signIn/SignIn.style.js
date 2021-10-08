@@ -3,6 +3,22 @@ import { Link } from 'react-router-dom';
 
 import sizes from '@utils/sizes';
 
+export const StyledH1 = styled.h1`
+  font-weight: 900;
+  color:${({ theme }) => theme.font};
+  font-size: 28px;
+  margin-top: 3em;
+  margin-bottom: 0em;
+`
+
+export const StyledH2 = styled.h2`
+  font-weight: 900;
+  color:${({ theme }) => theme.tertiary};
+  font-size: 27px;
+  margin-top: 0em;
+  margin-bottom: 1em;
+`
+
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -12,7 +28,7 @@ export const Wrapper = styled.div`
   height: 100%;
   width: 100%;
   font-size: 15px;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   color: #858585;
 
   .ant-form-item,
@@ -83,9 +99,10 @@ export const StyledText = styled.label`
 `;
 
 export const ErrorBox = styled.div`
-  background: ${({ theme }) => theme.primary};
-  color: ${({ theme }) => theme.background};
-  border: 1px solid ${({ theme }) => theme.secondary};
+  background: ${({ theme }) => theme.background};
+  color: ${({ theme }) => theme.secondary};
+  border: 1px solid ${({ theme }) => theme.primary};
   padding: 1em;
   width: 100%;
+  font-weight: 700;
 `;
