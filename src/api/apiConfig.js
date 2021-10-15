@@ -1,6 +1,5 @@
 import axios from 'axios';
 import {
-  rejectResponse,
   baseHeadersConfig,
 } from '../config/axiosConfig';
 
@@ -14,7 +13,7 @@ const nodeCoreAxios = axios.create({
   },
 });
 
-nodeCoreAxios.interceptors.response.use(rejectResponse);
+
 
 nodeCoreAxios.interceptors.request.use(baseHeadersConfig);
 

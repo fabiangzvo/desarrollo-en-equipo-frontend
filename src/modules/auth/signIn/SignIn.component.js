@@ -35,15 +35,14 @@ function SignIn() {
   const handleSubmit = async credentials => {
     const { email, password } = credentials
 
-    const response = await userApi(email, password)
-
+    const response = await userApi.signIn(email, password)
     const { status } = response
 
     if (status !== 200) return setStatus(status)
+    
 
     return history.push("/home")
   };
-
   return (
     <Layout>
       <Wrapper>
@@ -71,5 +70,6 @@ function SignIn() {
     </Layout>
   );
 }
+
 
 export default SignIn;
