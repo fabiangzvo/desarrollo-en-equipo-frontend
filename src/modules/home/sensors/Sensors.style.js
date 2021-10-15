@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const StyledContainer = styled.div`
 
     height: 10%;
@@ -21,8 +23,9 @@ export const StyledContainer3 = styled.div`
     background: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 80%;
     height: 115%;
+  
 
   `
 
@@ -51,7 +54,9 @@ export const StyledContainer3 = styled.div`
   `
   export const Contenedor = styled.div`
  
-    margin:auto;
+    margin:20px;
+    
+    
 
 `
 
@@ -59,12 +64,46 @@ export const StyledContainer3 = styled.div`
 export const Fondo = styled.img`
  
 position: relative;
-width: 50%;
-height: 50%;
+width: 40%;
+height: 40%;
+left:8%;
+margin:20px;
 
 `
 export const Fondo2 = styled.img`
  
 
+`
+
+export const StyledContainer6 = styled.div`
+
+margin:30px;
+padding-left: 150px;
+
+
 
 `
+
+export const Titulo2 = styled.div`
+
+margin:10px;
+color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    height:40px;
+    position: bottom;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: x-large;
+    padding-left: 150px;
+    
+
+
+`
+
+
+
+
+
+
+
+
+
