@@ -3,7 +3,7 @@ import { Switch, notification } from "antd";
 
 
 import api from "@/api/sensor";
-import { styledContainer } from './Sensors.style';
+import { StyledContainer, Robot,StyledContainer3,StyledContainer4,StyledContainer5,Titulo,Contenedor,Fondo,Fondo2} from './Sensors.style';
 function Sensors() {
 
   async function onChange(value) {
@@ -17,13 +17,30 @@ function Sensors() {
     
 
   return (
-    <styledContainer>
+    <div>
+      <StyledContainer5>
+    <StyledContainer>
+    <Robot src="http://localhost:3000/robot.png" />
+        <Titulo>SMART HOME</Titulo>
+        
+    </StyledContainer>
+    <StyledContainer3>
+
+      <Contenedor>
+   <Fondo src="http://localhost:3000/planta1.png"/>
+      <Switch efaultChecked  onChange={onChange} className="Switch1"/> bombillo
+      <Switch efaultChecked  onChange={onChange} /> bombillo
+      <Switch efaultChecked  onChange={onChange} /> bombillo
+      <Switch efaultChecked  onChange={onChange} /> bombillo
       
-      <Switch efaultChecked  onChange={onChange} /> bombillo
-      <Switch efaultChecked  onChange={onChange} /> bombillo
-      <Switch efaultChecked  onChange={onChange} /> bombillo
-      <Switch efaultChecked  onChange={onChange} /> bombillo
-    </styledContainer>
+      </Contenedor>
+    </StyledContainer3>
+    <StyledContainer4>
+   <Fondo2 src="http://localhost:3000/Convenciones.png"/>
+    </StyledContainer4>
+</StyledContainer5>
+     
+    </div>
   )
 
 }
