@@ -58,7 +58,9 @@ export const StyledContainer3 = styled.div`
 
 export const Fondo = styled.img`
  
-
+position: relative;
+width: 50%;
+height: 50%;
 
 `
 export const Fondo2 = styled.img`
