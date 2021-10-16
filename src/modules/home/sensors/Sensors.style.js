@@ -29,11 +29,13 @@ export const StyledContainer3 = styled.div`
 
   `
 
-  export const StyledContainer4 = styled.div`
+export const StyledContainer4 = styled.div`
+margin: 50PX;
+padding-left: 150px;
 
     `
 
-    export const StyledContainer5 = styled.div`
+export const StyledContainer5 = styled.div`
  
     display: flex;
     width: 100%;
@@ -41,7 +43,7 @@ export const StyledContainer3 = styled.div`
     flex-wrap: wrap;  
  
   `
-  export const Titulo = styled.span`
+export const Titulo = styled.span`
  
     color: rgba(255, 255, 255, 1);
     font-weight: bold;
@@ -52,7 +54,7 @@ export const StyledContainer3 = styled.div`
     margin:20px;
  
   `
-  export const Contenedor = styled.div`
+export const Contenedor = styled.div`
  
     margin:20px;
     

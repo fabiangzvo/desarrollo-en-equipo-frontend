@@ -11,7 +11,6 @@ function Sensors() {
   async function onChange(value) {
     console.log("Entro")
     const response = await api.changeLightStatus(value)
-    
     console.log(response)
     if (response.status !== 200) return notification.warning({ message: 'No se ha podido cambiar el estado de las luces' })
 
@@ -53,12 +52,13 @@ function Sensors() {
             </StyledContainer6>
 
           </Contenedor>
+          <StyledContainer4>
+          <Fondo2 src="http://localhost:3000/Convenciones.png" />
+        </StyledContainer4>
         </StyledContainer3>
 
 
-        <StyledContainer4>
-          <Fondo2 src="http://localhost:3000/Convenciones.png" />
-        </StyledContainer4>
+        
       </StyledContainer5>
 
     </div>
