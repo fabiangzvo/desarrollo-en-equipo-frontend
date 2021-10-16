@@ -2,7 +2,7 @@ import api from "./apiConfig";
 
 const Authentication = {};
 
-Authentication.changeLightStatus = (power) => api.put('light', { power })
+Authentication.changeLightStatus = (data) => api.put('light', data)
 
 
 export default Authentication
