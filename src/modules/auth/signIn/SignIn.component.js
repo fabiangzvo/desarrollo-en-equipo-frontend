@@ -33,9 +33,9 @@ function SignIn() {
   const history = useHistory()
 
   const handleSubmit = async credentials => {
-    const { email, password } = credentials
+    const { username, password } = credentials
 
-    const response = await userApi.signIn(email, password)
+    const response = await userApi.signIn(username, password)
     const { status } = response
 
     if (status !== 200) return setStatus(status)

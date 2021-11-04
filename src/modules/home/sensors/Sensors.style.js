@@ -15,23 +15,15 @@ height: 45px;
 width: 70px;
 margin: auto;
 padding-left: 20px;
-}
 `
 export const StyledContainer3 = styled.div`
-
-
     background: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: row;
-    width: 80%;
     height: 115%;
-  
-
   `
 
 export const StyledContainer4 = styled.div`
-margin: 50PX;
-padding-left: 150px;
 
     `
 
@@ -68,7 +60,6 @@ export const Fondo = styled.img`
 position: relative;
 width: 40%;
 height: 40%;
-left:8%;
 margin:20px;
 
 `
@@ -96,9 +87,12 @@ color: rgba(0, 0, 0, 1);
     font-family: 'Chakra Petch', sans-serif;
     font-size: x-large;
     padding-left: 150px;
-    
+`
 
-
+export const Container = styled.div`
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 `
 
 

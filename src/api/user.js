@@ -4,13 +4,13 @@ import api from "./apiConfig";
 
 const Authentication = {};
 
-Authentication.signIn = async (email, password) => {
+Authentication.signIn = async (username, password) => {
   const credentials = {
-    email,
+    username,
     password,
   };
 
-  const response = await api.post('/auth/sign-in', credentials);
+  const response = await api.post('/prod/login', credentials);
 
   const { status, data } = response;
 
