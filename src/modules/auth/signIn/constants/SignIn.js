@@ -5,11 +5,11 @@ import IconPassword from '@icons/IconPassword';
 
 export const FORM_ITEMS = [
   {
-    name: 'email',
+    name: 'username',
     ruleMessage: 'El correo electrónico es obligatorio',
     placeholder: 'Correo electrónico',
     prefix: <IconName />,
-    type: 'email',
+    type: 'input',
   },
   {
     name: 'password',
