@@ -2,23 +2,23 @@ const constants = {}
 
 constants.switchItems = [
   {
-    "username": "deibi",
+    "username": "example",
     "house_id": "1",
     "deviceType": "LIGHT",
     "device_id": "1"
   }, {
-    "username": "deibi",
+    "username": "example",
     "house_id": "1",
     "deviceType": "LIGHT",
     "device_id": "2"
   },
   {
-    "username": "deibi",
+    "username": "example",
     "house_id": "1",
     "deviceType": "LIGHT",
     "device_id": "3"
   }, {
-    "username": "deibi",
+    "username": "example",
     "house_id": "1",
     "deviceType": "LIGHT",
     "device_id": "4"

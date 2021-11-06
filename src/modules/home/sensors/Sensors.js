@@ -12,7 +12,7 @@ function Sensors() {
 
   function onChange(data) {
     return async (value) => {
-      const response = await api.changeLightStatus(data)
+      const response = await api.changeLightStatus( value ? 'encender' :'apagar' ,data)
 
       if (response.status !== 200) return notification.warning({ message: 'No se ha podido cambiar el estado de las luces' })
 
