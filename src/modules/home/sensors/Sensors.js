@@ -28,13 +28,13 @@ function Sensors() {
   return (
     <>
       <StyledContainer>
-        <Robot src="http://localhost:3000/robot.png" />
+        <Robot src="/robot.png" />
         <Titulo>SMART HOME</Titulo>
 
       </StyledContainer>
       <Container>
         <StyledContainer3>
-          <Fondo src="http://localhost:3000/planta1.png" />
+          <Fondo src="/planta1.png" />
 
           <Contenedor>
 
@@ -45,7 +45,7 @@ function Sensors() {
 
 
         <StyledContainer4>
-          <Fondo2 src="http://localhost:3000/convenciones.png" />
+          <Fondo2 src="/convenciones.png" />
         </StyledContainer4>
 
       </Container>
