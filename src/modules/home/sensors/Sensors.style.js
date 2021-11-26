@@ -47,8 +47,8 @@ export const Titulo = styled.span`
  
   `
 export const Contenedor = styled.div`
- 
-    margin:20px;
+
+  position:relative;
     
     
 
@@ -58,8 +58,8 @@ export const Contenedor = styled.div`
 export const Fondo = styled.img`
  
 position: relative;
-width: 40%;
-height: 40%;
+width: 60%;
+height: 60%;
 margin:20px;
 
 `
@@ -68,14 +68,43 @@ export const Fondo2 = styled.img`
 
 `
 
-export const StyledContainer6 = styled.div`
+export const StyledContainerbombillo2 = styled.div`
 
-margin:30px;
-padding-left: 150px;
+position: relative;
+left: -3px;top: -5px;margin-left: -401px;margin-top: 270px;"
 
 
 
 `
+
+export const StyledContainerbombillo1 = styled.div`
+
+position: relative;
+left: -347px;bottom: -46px;top: 130px;
+
+
+
+`
+
+export const StyledContainerbombillo3 = styled.div`
+
+position: relative;
+left: -313px;top: -29px;"
+
+
+
+`
+
+export const StyledContainerbombillo4 = styled.div`
+position: relative;
+left: -134px;top: -225px;"
+
+
+
+`
+
+
+
 
 export const Titulo2 = styled.div`
 

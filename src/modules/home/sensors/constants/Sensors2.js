@@ -1,6 +1,6 @@
-const constants = {}
+const constants2 = {}
 
-constants.switchItems = [
+constants2.switchItems = [
   {
     "username": "example",
     "house_id": "1",
@@ -9,4 +9,4 @@ constants.switchItems = [
   }
 ]
 
-export default constants
+export default constants2
