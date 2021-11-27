@@ -71,7 +71,7 @@ export const Fondo2 = styled.img`
 export const StyledContainerbombillo2 = styled.div`
 
 position: relative;
-left: -3px;top: -5px;margin-left: -401px;margin-top: 270px;"
+left: -3%;top: -5px;margin-left: -401px;margin-top: 270px;"
 
 
 
@@ -80,7 +80,7 @@ left: -3px;top: -5px;margin-left: -401px;margin-top: 270px;"
 export const StyledContainerbombillo1 = styled.div`
 
 position: relative;
-left: -347px;bottom: -46px;top: 130px;
+left:-600%;";bottom: -46px;top: 130px;
 
 
 
@@ -89,7 +89,7 @@ left: -347px;bottom: -46px;top: 130px;
 export const StyledContainerbombillo3 = styled.div`
 
 position: relative;
-left: -313px;top: -29px;"
+left: -560%;top: -29px;"
 
 
 
@@ -97,7 +97,7 @@ left: -313px;top: -29px;"
 
 export const StyledContainerbombillo4 = styled.div`
 position: relative;
-left: -134px;top: -225px;"
+left: -220%;top: -225px;"
 
 
 
