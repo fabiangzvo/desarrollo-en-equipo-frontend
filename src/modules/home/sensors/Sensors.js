@@ -43,7 +43,6 @@ function Sensors() {
           </Contenedor>
         </StyledContainer3>
 
-
         <StyledContainer4>
           <Fondo2 src="/convenciones.png" />
         </StyledContainer4>
