@@ -8,10 +8,11 @@ import RegisterFranja from "./registerFranja/registerFranja"
 function Router() {
   return (
     <Switch>
+      <Route exact path="/RegisterFranja" component={RegisterFranja} />
       <Route exact path="/home" component={Sensors} />
       <Route exact path="" component={Login} />
       <Route exact path="/Login" component={Login} />
-      <Route exact path="/RegisterFranja" component={RegisterFranja} />
+      
     </Switch>
   )
 }
