@@ -1,8 +1,15 @@
 import api from "./apiConfig";
 
-const Authentication = {};
+const sensors = {};
 
-Authentication.changeLightStatus = (status,data) => api.post(`prod/${status}`, data)
+sensors.changeLightStatus = (status, data) => api.post(`prod/${status}`, data)
 
+sensors.checkTemperature = () => api.get('prod/v1/broker/temperatura')
 
-export default Authentication
+sensors.checkHumidity = () => api.get('prod/v1/broker/humedad')
+
+sensors.checkMovement = () => api.post('prod/movimiento', {}, { baseURL: process.env.REACT_APP_API_SENSOR })
+
+sensors.checkStatus = () => api.post('prod/apertura', {}, { baseURL: process.env.REACT_APP_API_SENSOR })
+
+export default sensors
