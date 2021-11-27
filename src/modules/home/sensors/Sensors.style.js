@@ -80,7 +80,7 @@ left: -3px;top: -5px;margin-left: -401px;margin-top: 270px;"
 export const StyledContainerbombillo1 = styled.div`
 
 position: relative;
-left: -347px;bottom: -46px;top: 130px;
+left:style="left: -22%;";bottom: -46%;top: 24%; right:600%;
 
 
 

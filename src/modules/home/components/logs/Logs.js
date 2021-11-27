@@ -4,6 +4,7 @@ import { Button } from "antd";
 import api from "@api/sensor";
 
 import { Container, Panel } from "./styles";
+import { Link } from 'react-router-dom';
 
 function Logs() {
   const [logs, setLogs] = useState('')
@@ -38,6 +39,7 @@ function Logs() {
       .catch(() => setLogs(logs + '\n' + 'ERROR'))
   }
 
+
   return (
     <Container>
       <Panel>
@@ -46,6 +48,7 @@ function Logs() {
       <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', marginTop: '1em' }}>
         <Button onClick={handleMovement}>Movimiento</Button>
         <Button onClick={handleStatus}>Apertura</Button>
+        <Link to={'/RegisterFranja'}>Registrar Franja</Link>
       </div>
     </Container>
   )
