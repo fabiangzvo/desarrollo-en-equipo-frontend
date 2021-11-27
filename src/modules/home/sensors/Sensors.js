@@ -6,6 +6,7 @@ import api from "@/api/sensor";
 import { Container, StyledContainer, Robot, StyledContainer3, StyledContainer4, Titulo2, Titulo, Contenedor, Fondo, Fondo2, StyledContainer6, } from './Sensors.style';
 import constants from "./constants/Sensors";
 
+
 function Sensors() {
 
 
@@ -42,6 +43,7 @@ function Sensors() {
             {items}
           </Contenedor>
         </StyledContainer3>
+
 
         <StyledContainer4>
           <Fondo2 src="/convenciones.png" />

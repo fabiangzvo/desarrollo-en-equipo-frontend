@@ -9,7 +9,7 @@ function Router() {
   return (
     <Switch>
       <Route exact path="/home" component={Sensors} />
-      <Route exact path="" component={RegisterFranja} />
+      <Route exact path="" component={Login} />
       <Route exact path="/Login" component={Login} />
       <Route exact path="/RegisterFranja" component={RegisterFranja} />
     </Switch>
